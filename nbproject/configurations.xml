@@ -26,6 +26,11 @@
                    displayName="Important Files"
                    projectFiles="false">
       <itemPath>Makefile</itemPath>
+      <itemPath>Defines.h</itemPath>
+      <itemPath>Functions.h</itemPath>
+      <itemPath>LCD.h</itemPath>
+      <itemPath>Menue.h</itemPath>
+      <itemPath>README.md</itemPath>
     </logicalFolder>
   </logicalFolder>
   <projectmakefile>Makefile</projectmakefile>
