@@ -452,7 +452,7 @@ int KurvenBereich;
 					bit_set(Alarm,6);					// Hupe an
 				}
 			}	
-			else if(mAWert[0]<350)						// kleiner 3,5 mA
+			else if(mAWert[0]<300)						// kleiner 3,0 mA
 			{	
 				if(JahrWartung!=2)
 				{
@@ -580,7 +580,7 @@ int KurvenBereich;
 					bit_set(Alarm,7);			// Hupe an
 				}
 			}	
-			else if(mAWert[1]<350)						// kleiner 3,5 mA
+			else if(mAWert[1]<300)						// kleiner 3,0 mA
 			{	
 				if(JahrWartung!=2)
 				{

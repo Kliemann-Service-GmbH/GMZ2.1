@@ -9,6 +9,8 @@ FileList=GMZ2.1.c
 Type=4
 [mru-list]
 1=build\default\production\GMZ2.1.c
+[build\default\debug\GMZ2.1.c]
+Type=4
 [Units]
 Count=1
 1=GMZ2.1 (main)
