@@ -177,9 +177,10 @@ void Sensor(int a)
  * 18 = C6H2
  * 19 = R410
  * 20 = Rauch
- * 21 = C2H6O
- * 22 = C8H8
- * 23 = R407f
+ * 21 = C2H6        // Ethan
+ * 22 = C2H6O       // Ethanol
+ * 23 = C8H8
+ * 24 = R407f
  * Rest = O2
  */
 void STyp(Kanal,b)
@@ -208,9 +209,10 @@ void STyp(Kanal,b)
     else if(b==18){STypout[0]='C';STypout[1]='6';STypout[2]='H';STypout[3]='2';}
     else if(b==19){STypout[0]='R';STypout[1]='4';STypout[2]='1';STypout[3]='0';}			// MM2
     else if(b==20){STypout[0]='R';STypout[1]='a';STypout[2]='u';STypout[3]='c';STypout[4]='h';}	// MM2
-    else if(b==21){STypout[0]='C';STypout[1]='2';STypout[2]='H';STypout[3]='6';STypout[4]='O';}
-    else if(b==22){STypout[0]='C';STypout[1]='8';STypout[2]='H';STypout[3]='8';}
-    else if(b==23){STypout[0]='R';STypout[1]='4';STypout[2]='0';STypout[3]='7';STypout[4]='f';}
+    else if(b==21){STypout[0]='C';STypout[1]='2';STypout[2]='H';STypout[3]='6';}                    // Ethan
+    else if(b==22){STypout[0]='C';STypout[1]='2';STypout[2]='H';STypout[3]='6';STypout[4]='0';}    // Ethanol
+    else if(b==23){STypout[0]='C';STypout[1]='8';STypout[2]='H';STypout[3]='8';}
+    else if(b==24){STypout[0]='R';STypout[1]='4';STypout[2]='0';STypout[3]='7';STypout[4]='f';}
     else {STypout[0]='O';STypout[1]='2';}
 
     memcpy(Typ[Kanal],STypout,5);
