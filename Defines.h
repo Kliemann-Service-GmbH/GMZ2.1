@@ -264,7 +264,7 @@ BORV27   Brownout-Reset bei 2,7V
     51,         // Passwort Ziffer 3
     52,         // Passwort Ziffer 4
     2,          // KaltstartverzÃ¶gerung in Minuten
-    hilo(215),  // Wartungsinterval Tag LOWByte
+    hilo(364),  // Wartungsinterval Tag LOWByte
 
     // Sensor1
     16,          // Typ Sensor1 (0=CH4;1=NH3;2=CO;3=CO2;4=NO;5=NO2;6=C3H6O;7=C2H2;8=HC;9=R22;10=R23;11=R134a;12=R404a;13=R407c;14=C4H8O;15=C9H2O;16=C3H8;17=C4H1O;18=C6H2;19=R410;20=Rauch;21=C2H6;22=C2H6O;23=C8H8;24=R407f;Rest=O2;)
