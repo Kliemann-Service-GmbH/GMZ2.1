@@ -923,7 +923,7 @@ void Tasterauswertung(void)
 			if(Passwort==1)
 			{
 				if((P[0]==PW[0]&&P[1]==PW[1]&&P[2]==PW[2]&&P[3]==PW[3])||
-					(P[0]=='2'&&P[1]=='2'&&P[2]=='0'&&P[3]=='1'))			// Masterpasswort 2201
+					(P[0]=='2'&&P[1]=='3'&&P[2]=='1'&&P[3]=='1'))			// Masterpasswort 2311 (seit 10/2015 stm)
 				{
 					Passwort=0;
 					lcd_send_byte(0,0x0C);	// Cursor aus
