@@ -116,10 +116,10 @@ BORV27   Brownout-Reset bei 2,7V
 #define PasswortB		1	// Passwort Ziffer 2					0
 #define PasswortC		2	// Passwort Ziffer 3					0
 #define PasswortD		3	// Passwort Ziffer 4					0
-#define EEKSZeit		4	// KaltstartverzÃ¯Â¿Â½gerung in Minuten		0
+#define EEKSZeit        4	// KaltstartverzÃ¯Â¿Â½gerung in Minuten		0
 #define EETagH			5	// Wartungsinterval Tag HIGHByte		1	365
 #define	EETagL			6	// Wartungsinterval Tag LOWByte			6D
-#define EESensortyp1            7	// Sensor1 Typ							0	CH4
+#define EESensortyp1    7	// Sensor1 Typ							0	CH4
 #define EEEinheitS1		8	// Sensor1 Einheit						0	%UEG
 #define EEOGS1			9	// Oberer Grenzwert Sensor 1 HIGHByte	3	100,0%
 #define EEOGS1A			10	// Oberer Grenzwert Sensor 1 LOWByte	E8
@@ -145,8 +145,8 @@ BORV27   Brownout-Reset bei 2,7V
 #define EES1WP8KonL		30	// Wertepaar 8 Konzentration LOWByte	5E
 #define EES1WP9KonH		31	// Wertepaar 9 Konzentration HIGHByte	1	40,0%
 #define EES1WP9KonL		32	// Wertepaar 9 Konzentration LOWByte	90
-#define EES1WP10KonH	33	// Wertepaar 10 Konzentration HIGHByte	3	100,0%
-#define EES1WP10KonL	34	// Wertepaar 10 Konzentration LOWByte	E8
+#define EES1WP10KonH    	33	// Wertepaar 10 Konzentration HIGHByte	3	100,0%
+#define EES1WP10KonL    34	// Wertepaar 10 Konzentration LOWByte	E8
 #define EES1WP1mAH		35	// Wertepaar 1 Strom HIGHByte			1	4,00mA
 #define EES1WP1mAL		36	// Wertepaar 1 Strom LOWByte			90
 #define EES1WP2mAH		37	// Wertepaar 2 Strom HIGHByte			2	5,00mA 	Email v. 6.4.11
@@ -167,7 +167,7 @@ BORV27   Brownout-Reset bei 2,7V
 #define EES1WP9mAL		52	// Wertepaar 9 Strom LOWByte			84
 #define EES1WP10mAH		53	// Wertepaar 10 Strom HIGHByte			7	20,00mA
 #define EES1WP10mAL		54	// Wertepaar 10 Strom LOWByte			D0
-#define EESensortyp2	55	// Sensor2 Typ							wie bei Sensor1
+#define EESensortyp2    55	// Sensor2 Typ							wie bei Sensor1
 #define EEEinheitS2		56	// Sensor2 Einheit
 #define EEOGS2			57	// Oberer Grenzwert Sensor 2 HIGHByte
 #define EEOGS2A			58	// Oberer Grenzwert Sensor 2 LOWByte
@@ -193,8 +193,8 @@ BORV27   Brownout-Reset bei 2,7V
 #define EES2WP8KonL		78	// Wertepaar 8 Konzentration LOWByte
 #define EES2WP9KonH		79	// Wertepaar 9 Konzentration HIGHByte
 #define EES2WP9KonL		80	// Wertepaar 9 Konzentration LOWByte
-#define EES2WP10KonH	81	// Wertepaar 10 Konzentration HIGHByte
-#define EES2WP10KonL	82	// Wertepaar 10 Konzentration LOWByte
+#define EES2WP10KonH    81	// Wertepaar 10 Konzentration HIGHByte
+#define EES2WP10KonL    82	// Wertepaar 10 Konzentration LOWByte
 #define EES2WP1mAH		83	// Wertepaar 1 Strom HIGHByte
 #define EES2WP1mAL		84	// Wertepaar 1 Strom LOWByte
 #define EES2WP2mAH		85	// Wertepaar 2 Strom HIGHByte
@@ -271,7 +271,7 @@ BORV27   Brownout-Reset bei 2,7V
     0,          // Einheit Sensor1 (0=UEG, 1=VOL, 2=ppm)
     hilo(1000), // Oberer Grenzwert
     hilo(0),    // Unterer Grenzwert
-    0,          // Auswertung Linear oder Kurve Sensor1 (0=linear; 1=kurve)
+    1,          // Auswertung Linear oder Kurve Sensor1 (0=linear; 1=kurve)
     1,          // Freigabe     Sensor1
     hilo(0),    // Wertepaar 1 Konzentration LOWByte   Sensor1
     hilo(1),    // Wertepaar 2 Konzentration LOWByte   Sensor1
@@ -299,7 +299,7 @@ BORV27   Brownout-Reset bei 2,7V
     0,          // Einheit Sensor2 (0=UEG, 1=VOL, 2=ppm)
     hilo(1000), // Oberer Grenzwert
     hilo(0),    // Unterer Grenzwert
-    0,          // Auswertung Linear oder Kurve Sensor2 (0=linear; 1=kurve)
+    1,          // Auswertung Linear oder Kurve Sensor2 (0=linear; 1=kurve)
     1,          // Freigabe     Sensor2
     hilo(0),    // Wertepaar 1 Konzentration LOWByte   Sensor2
     hilo(1),    // Wertepaar 2 Konzentration LOWByte   Sensor2
