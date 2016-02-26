@@ -182,6 +182,7 @@ void Sensor(int a)
  * 23 = C8H8
  * 24 = R407f
  * 25 = C4H10       // Butan/ R600
+ * 26 = CL2         // Chlor
  * Rest = O2
  */
 void STyp(Kanal,b)
