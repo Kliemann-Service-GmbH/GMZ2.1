@@ -181,6 +181,8 @@ void Sensor(int a)
  * 22 = C2H6O       // Ethanol
  * 23 = C8H8
  * 24 = R407f
+ * 25 = C4H10       // Butan/ R600
+ * 26 = CL2         // Chlor
  * Rest = O2
  */
 void STyp(Kanal,b)
@@ -188,32 +190,34 @@ void STyp(Kanal,b)
     char STypout[5];
     memset(STypout, 0x20, sizeof(STypout));
 
-    if(b==0){STypout[0]='C';STypout[1]='H';STypout[2]='4';}
-    else if(b==1){STypout[0]='N';STypout[1]='H';STypout[2]='3';}
-    else if(b==2){STypout[0]='C';STypout[1]='O';}
-    else if(b==3){STypout[0]='C';STypout[1]='O';STypout[2]='2';}
-    else if(b==4){STypout[0]='N';STypout[1]='O';}
-    else if(b==5){STypout[0]='N';STypout[1]='O';STypout[2]='2';}
-    else if(b==6){STypout[0]='C';STypout[1]='3';STypout[2]='H';STypout[3]='6';STypout[4]='O';}
-    else if(b==7){STypout[0]='C';STypout[1]='2';STypout[2]='H';STypout[3]='2';}
-    else if(b==8){STypout[0]='H';STypout[1]='C';}
-    else if(b==9){STypout[0]='R';STypout[1]='2';STypout[2]='2';}
-    else if(b==10){STypout[0]='R';STypout[1]='2';STypout[2]='3';}
-    else if(b==11){STypout[0]='R';STypout[1]='1';STypout[2]='3';STypout[3]='4';STypout[4]='a';}
-    else if(b==12){STypout[0]='R';STypout[1]='4';STypout[2]='0';STypout[3]='4';STypout[4]='a';}
-    else if(b==13){STypout[0]='R';STypout[1]='4';STypout[2]='0';STypout[3]='7';STypout[4]='c';}
-    else if(b==14){STypout[0]='C';STypout[1]='4';STypout[2]='H';STypout[3]='8';STypout[4]='O';}
-    else if(b==15){STypout[0]='C';STypout[1]='9';STypout[2]='H';STypout[3]='2';STypout[4]='0';}
-    else if(b==16){STypout[0]='C';STypout[1]='3';STypout[2]='H';STypout[3]='8';}
-    else if(b==17){STypout[0]='C';STypout[1]='4';STypout[2]='H';STypout[3]='1';STypout[4]='0';}
-    else if(b==18){STypout[0]='C';STypout[1]='6';STypout[2]='H';STypout[3]='2';}
-    else if(b==19){STypout[0]='R';STypout[1]='4';STypout[2]='1';STypout[3]='0';}			// MM2
-    else if(b==20){STypout[0]='R';STypout[1]='a';STypout[2]='u';STypout[3]='c';STypout[4]='h';}	// MM2
-    else if(b==21){STypout[0]='C';STypout[1]='2';STypout[2]='H';STypout[3]='6';}                    // Ethan
-    else if(b==22){STypout[0]='C';STypout[1]='2';STypout[2]='H';STypout[3]='6';STypout[4]='0';}    // Ethanol
-    else if(b==23){STypout[0]='C';STypout[1]='8';STypout[2]='H';STypout[3]='8';}
-    else if(b==24){STypout[0]='R';STypout[1]='4';STypout[2]='0';STypout[3]='7';STypout[4]='f';}
-    else {STypout[0]='O';STypout[1]='2';}
+    if(b==0){STypout[0]='C';STypout[1]='H';STypout[2]='4';}                                         // 000: CH4
+    else if(b==1){STypout[0]='N';STypout[1]='H';STypout[2]='3';}                                    // 001: NH3
+    else if(b==2){STypout[0]='C';STypout[1]='O';}                                                   // 002: CO (Kohlenmonoxid)
+    else if(b==3){STypout[0]='C';STypout[1]='O';STypout[2]='2';}                                    // 003: CO2 (Kohlendioxid)
+    else if(b==4){STypout[0]='N';STypout[1]='O';}                                                   // 004: NO (Stickstoffmonoxid, Stickoxid)
+    else if(b==5){STypout[0]='N';STypout[1]='O';STypout[2]='2';}                                    // 005: NO2 (Stickstoffdioxid)
+    else if(b==6){STypout[0]='C';STypout[1]='3';STypout[2]='H';STypout[3]='6';STypout[4]='O';}      // 006: C3H6O
+    else if(b==7){STypout[0]='C';STypout[1]='2';STypout[2]='H';STypout[3]='2';}                     // 007: C2H2
+    else if(b==8){STypout[0]='H';STypout[1]='C';}                                                   // 008: HC
+    else if(b==9){STypout[0]='R';STypout[1]='2';STypout[2]='2';}                                    // 009: R22
+    else if(b==10){STypout[0]='R';STypout[1]='2';STypout[2]='3';}                                   // 010: R23
+    else if(b==11){STypout[0]='R';STypout[1]='1';STypout[2]='3';STypout[3]='4';STypout[4]='a';}     // 011: R134a
+    else if(b==12){STypout[0]='R';STypout[1]='4';STypout[2]='0';STypout[3]='4';STypout[4]='a';}     // 012: R404a
+    else if(b==13){STypout[0]='R';STypout[1]='4';STypout[2]='0';STypout[3]='7';STypout[4]='c';}     // 013: R407c
+    else if(b==14){STypout[0]='C';STypout[1]='4';STypout[2]='H';STypout[3]='8';STypout[4]='O';}     // 014: C4H8O
+    else if(b==15){STypout[0]='C';STypout[1]='9';STypout[2]='H';STypout[3]='2';STypout[4]='0';}     // 015: C9H20 (Nonan))
+    else if(b==16){STypout[0]='C';STypout[1]='3';STypout[2]='H';STypout[3]='8';}                    // 016: Propan R290
+    else if(b==17){STypout[0]='C';STypout[1]='4';STypout[2]='H';STypout[3]='1';STypout[4]='0';}     // 017: C4H10
+    else if(b==18){STypout[0]='C';STypout[1]='6';STypout[2]='H';STypout[3]='2';}                    // 018: C6H2
+    else if(b==19){STypout[0]='R';STypout[1]='4';STypout[2]='1';STypout[3]='0';}                    // 019: R410
+    else if(b==20){STypout[0]='R';STypout[1]='a';STypout[2]='u';STypout[3]='c';STypout[4]='h';}     // 020: Rauch (Rauchgas)
+    else if(b==21){STypout[0]='C';STypout[1]='2';STypout[2]='H';STypout[3]='6';}                    // 021: C2H6 (Ethan)
+    else if(b==22){STypout[0]='C';STypout[1]='2';STypout[2]='H';STypout[3]='6';STypout[4]='O';}     // 022: C2H6O (Ethanol)
+    else if(b==23){STypout[0]='C';STypout[1]='8';STypout[2]='H';STypout[3]='8';}                    // 023: C8H8
+    else if(b==24){STypout[0]='R';STypout[1]='4';STypout[2]='0';STypout[3]='7';STypout[4]='f';}     // 024: R407f
+    else if(b==25){STypout[0]='C';STypout[1]='4';STypout[2]='H';STypout[3]='1';STypout[4]='0';}     // 025: C4H10 Butan R600
+    else if(b==26){STypout[0]='C';STypout[1]='L';STypout[2]='2';}                                   // 026: CL2 (Chlor)
+    else {STypout[0]='O';STypout[1]='2';}                                                           // Rest: O2 (Sauerstoff))
 
     memcpy(Typ[Kanal],STypout,5);
 }
