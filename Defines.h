@@ -263,9 +263,9 @@ BORV27   Brownout-Reset bei 2,7V
     hilo(364),  // Wartungsinterval Tag LOWByte
 
     // Sensor1
-    2,         // Typ Sensor1 (siehe Datei LCD.h)
+    2,          // Typ Sensor1 (siehe Datei LCD.h)
     2,          // Einheit Sensor1 (0=UEG, 1=VOL, 2=ppm)
-    hilo(1000), // Oberer Grenzwert
+    hilo(1000), // Oberer Grenzwert (UEG x10, ppm x1)
     hilo(0),    // Unterer Grenzwert
     0,          // Auswertung Linear oder Kurve Sensor1 (0=linear; 1=Kurve)
     1,          // Freigabe Sensor1
@@ -282,18 +282,18 @@ BORV27   Brownout-Reset bei 2,7V
     hilo(400),  // Wertepaar 1 Strom LOWByte Sensor1
     hilo(500),  // Wertepaar 2 Strom LOWByte Sensor1
     hilo(906),  // Wertepaar 3 Strom LOWByte Sensor1
-    hilo(1011), // Wertepaar 4 Strom LOWByte Sensor1
-    hilo(1116), // Wertepaar 5 Strom LOWByte Sensor1
-    hilo(1200), // Wertepaar 6 Strom LOWByte Sensor1
-    hilo(1276), // Wertepaar 7 Strom LOWByte Sensor1
-    hilo(1344), // Wertepaar 8 Strom LOWByte Sensor1
-    hilo(1412), // Wertepaar 9 Strom LOWByte Sensor1
+    hilo(1200), // Wertepaar 4 Strom LOWByte Sensor1
+    hilo(1276), // Wertepaar 5 Strom LOWByte Sensor1
+    hilo(1346), // Wertepaar 6 Strom LOWByte Sensor1
+    hilo(1412), // Wertepaar 7 Strom LOWByte Sensor1
+    hilo(1531), // Wertepaar 8 Strom LOWByte Sensor1
+    hilo(1786), // Wertepaar 9 Strom LOWByte Sensor1
     hilo(2000), // Wertepaar 10 Strom LOWByte Sensor1
 
     // Sensor2
-    2,         // Typ Sensor2 (siehe Datei LCD.h)
+    2,          // Typ Sensor2 (siehe Datei LCD.h)
     2,          // Einheit Sensor2 (0=UEG, 1=VOL, 2=ppm)
-    hilo(1000), // Oberer Grenzwert
+    hilo(1000), // Oberer Grenzwert (UEG x10, ppm x1)
     hilo(0),    // Unterer Grenzwert
     0,          // Auswertung Linear oder Kurve Sensor2 (0=linear; 1=Kurve)
     1,          // Freigabe Sensor2
@@ -310,12 +310,12 @@ BORV27   Brownout-Reset bei 2,7V
     hilo(400),  // Wertepaar 1 Strom LOWByte Sensor2
     hilo(500),  // Wertepaar 2 Strom LOWByte Sensor2
     hilo(906),  // Wertepaar 3 Strom LOWByte Sensor2
-    hilo(1011), // Wertepaar 4 Strom LOWByte Sensor2
-    hilo(1116), // Wertepaar 5 Strom LOWByte Sensor2
-    hilo(1200), // Wertepaar 6 Strom LOWByte Sensor2
-    hilo(1276), // Wertepaar 7 Strom LOWByte Sensor2
-    hilo(1344), // Wertepaar 8 Strom LOWByte Sensor2
-    hilo(1412), // Wertepaar 9 Strom LOWByte Sensor2
+    hilo(1200), // Wertepaar 4 Strom LOWByte Sensor2
+    hilo(1276), // Wertepaar 5 Strom LOWByte Sensor2
+    hilo(1346), // Wertepaar 6 Strom LOWByte Sensor2
+    hilo(1412), // Wertepaar 7 Strom LOWByte Sensor2
+    hilo(1531), // Wertepaar 8 Strom LOWByte Sensor2
+    hilo(1786), // Wertepaar 9 Strom LOWByte Sensor2
     hilo(2000), // Wertepaar 10 Strom LOWByte Sensor2
 
     // Alarm Einstellungen
