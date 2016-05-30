@@ -271,14 +271,14 @@ BORV27   Brownout-Reset bei 2,7V
     1,          // Freigabe Sensor1
     hilo(0),    // Wertepaar 1 Konzentration LOWByte Sensor1
     hilo(1),    // Wertepaar 2 Konzentration LOWByte Sensor1
-    hilo(200),  // Wertepaar 3 Konzentration LOWByte Sensor1
-    hilo(500),  // Wertepaar 4 Konzentration LOWByte Sensor1
-    hilo(600),  // Wertepaar 5 Konzentration LOWByte Sensor1
-    hilo(700),  // Wertepaar 6 Konzentration LOWByte Sensor1
-    hilo(800),  // Wertepaar 7 Konzentration LOWByte Sensor1
-    hilo(1000),  // Wertepaar 8 Konzentration LOWByte Sensor1
-    hilo(1500),  // Wertepaar 9 Konzentration LOWByte Sensor1
-    hilo(2000), // Wertepaar 10 Konzentration LOWByte Sensor1
+    hilo(100),  // Wertepaar 3 Konzentration LOWByte Sensor1
+    hilo(150),  // Wertepaar 4 Konzentration LOWByte Sensor1
+    hilo(200),  // Wertepaar 5 Konzentration LOWByte Sensor1
+    hilo(250),  // Wertepaar 6 Konzentration LOWByte Sensor1
+    hilo(300),  // Wertepaar 7 Konzentration LOWByte Sensor1
+    hilo(350),  // Wertepaar 8 Konzentration LOWByte Sensor1
+    hilo(400),  // Wertepaar 9 Konzentration LOWByte Sensor1
+    hilo(1000), // Wertepaar 10 Konzentration LOWByte Sensor1
     hilo(400),  // Wertepaar 1 Strom LOWByte Sensor1
     hilo(500),  // Wertepaar 2 Strom LOWByte Sensor1
     hilo(906),  // Wertepaar 3 Strom LOWByte Sensor1
@@ -299,14 +299,14 @@ BORV27   Brownout-Reset bei 2,7V
     1,          // Freigabe Sensor2
     hilo(0),    // Wertepaar 1 Konzentration LOWByte Sensor2
     hilo(1),    // Wertepaar 2 Konzentration LOWByte Sensor2
-    hilo(200),  // Wertepaar 3 Konzentration LOWByte Sensor2
-    hilo(500),  // Wertepaar 4 Konzentration LOWByte Sensor2
-    hilo(600),  // Wertepaar 5 Konzentration LOWByte Sensor2
-    hilo(700),  // Wertepaar 6 Konzentration LOWByte Sensor2
-    hilo(800),  // Wertepaar 7 Konzentration LOWByte Sensor2
-    hilo(1000),  // Wertepaar 8 Konzentration LOWByte Sensor2
-    hilo(1500),  // Wertepaar 9 Konzentration LOWByte Sensor2
-    hilo(2000), // Wertepaar 10 Konzentration LOWByte Sensor2
+    hilo(100),  // Wertepaar 3 Konzentration LOWByte Sensor2
+    hilo(150),  // Wertepaar 4 Konzentration LOWByte Sensor2
+    hilo(200),  // Wertepaar 5 Konzentration LOWByte Sensor2
+    hilo(250),  // Wertepaar 6 Konzentration LOWByte Sensor2
+    hilo(300),  // Wertepaar 7 Konzentration LOWByte Sensor2
+    hilo(350),  // Wertepaar 8 Konzentration LOWByte Sensor2
+    hilo(400),  // Wertepaar 9 Konzentration LOWByte Sensor2
+    hilo(1000), // Wertepaar 10 Konzentration LOWByte Sensor2
     hilo(400),  // Wertepaar 1 Strom LOWByte Sensor2
     hilo(500),  // Wertepaar 2 Strom LOWByte Sensor2
     hilo(906),  // Wertepaar 3 Strom LOWByte Sensor2
