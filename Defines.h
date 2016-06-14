@@ -265,7 +265,7 @@ BORV27   Brownout-Reset bei 2,7V
    // Sensor1
     27,         // Typ Sensor1 (siehe Datei LCD.h)
     1,          // Einheit Sensor1 (0=UEG, 1=VOL, 2=ppm)
-    hilo(1000), // Oberer Grenzwert (UEG x10)
+    hilo(250), // Oberer Grenzwert (UEG x10)
     hilo(0),    // Unterer Grenzwert
     0,          // Auswertung Linear oder Kurve Sensor1 (0=linear; 1=Kurve)
     1,          // Freigabe Sensor1
@@ -293,7 +293,7 @@ BORV27   Brownout-Reset bei 2,7V
    // Sensor2
     27,         // Typ Sensor2 (siehe Datei LCD.h)
     1,          // Einheit Sensor2 (0=UEG, 1=VOL, 2=ppm)
-    hilo(1000), // Oberer Grenzwert (UEG x10)
+    hilo(250), // Oberer Grenzwert (UEG x10)
     hilo(0),    // Unterer Grenzwert
     0,          // Auswertung Linear oder Kurve Sensor2 (0=linear; 1=Kurve)
     1,          // Freigabe Sensor2
