@@ -267,7 +267,7 @@ BORV27   Brownout-Reset bei 2,7V
     0,          // Einheit Sensor1 (0=UEG, 1=VOL, 2=ppm)
     hilo(1000), // Oberer Grenzwert (UEG x10)
     hilo(0),    // Unterer Grenzwert
-    1,          // Auswertung Linear oder Kurve Sensor1 (0=linear; 1=Kurve)
+    0,          // Auswertung Linear oder Kurve Sensor1 (0=linear; 1=Kurve)
     1,          // Freigabe Sensor1
     hilo(0),    // Wertepaar 1 Konzentration LOWByte Sensor1
     hilo(1),    // Wertepaar 2 Konzentration LOWByte Sensor1
@@ -296,7 +296,7 @@ BORV27   Brownout-Reset bei 2,7V
     hilo(1000), // Oberer Grenzwert (UEG x10)
     hilo(0),    // Unterer Grenzwert
     0,          // Auswertung Linear oder Kurve Sensor2 (0=linear; 1=Kurve)
-    0,          // Freigabe Sensor2
+    1,          // Freigabe Sensor2
     hilo(0),    // Wertepaar 1 Konzentration LOWByte Sensor2
     hilo(1),    // Wertepaar 2 Konzentration LOWByte Sensor2
     hilo(100),  // Wertepaar 3 Konzentration LOWByte Sensor2
