@@ -262,10 +262,10 @@ BORV27   Brownout-Reset bei 2,7V
     2,          // Kaltstartverzögerung in Minuten
     hilo(364),  // Wartungsinterval Tag LOWByte
 
-    // Sensor1
-    11,         // Typ Sensor1 (siehe Datei LCD.h)
+   // Sensor1
+    11,          // Typ Sensor1 (siehe Datei LCD.h)
     2,          // Einheit Sensor1 (0=UEG, 1=VOL, 2=ppm)
-    hilo(2000), // Oberer Grenzwert
+    hilo(2000), // Oberer Grenzwert (UEG x10)
     hilo(0),    // Unterer Grenzwert
     1,          // Auswertung Linear oder Kurve Sensor1 (0=linear; 1=Kurve)
     1,          // Freigabe Sensor1
@@ -289,11 +289,11 @@ BORV27   Brownout-Reset bei 2,7V
     hilo(1531), // Wertepaar 8 Strom LOWByte Sensor1
     hilo(1786), // Wertepaar 9 Strom LOWByte Sensor1
     hilo(2000), // Wertepaar 10 Strom LOWByte Sensor1
-
-    // Sensor2
-    11,         // Typ Sensor2 (siehe Datei LCD.h)
+            
+   // Sensor2
+    11,          // Typ Sensor2 (siehe Datei LCD.h)
     2,          // Einheit Sensor2 (0=UEG, 1=VOL, 2=ppm)
-    hilo(2000), // Oberer Grenzwert
+    hilo(2000), // Oberer Grenzwert (UEG x10)
     hilo(0),    // Unterer Grenzwert
     1,          // Auswertung Linear oder Kurve Sensor2 (0=linear; 1=Kurve)
     1,          // Freigabe Sensor2
