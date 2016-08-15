@@ -155,36 +155,7 @@ void Sensor(int a)
 }
 
 
-/** Sensortypen
- * 0 = CH4
- * 1 = NH3
- * 2 = CO
- * 3 = CO2
- * 4 = NO
- * 5 = NO2
- * 6 = C3H6O
- * 7 = C2H2
- * 8 = HC
- * 9 = R22
- * 10 = R23
- * 11 = R134a
- * 12 = R404a
- * 13 = R407c
- * 14 = C4H8O
- * 15 = C9H2O
- * 16 = C3H8
- * 17 = C4H1O
- * 18 = C6H2
- * 19 = R410
- * 20 = Rauch
- * 21 = C2H6        // Ethan
- * 22 = C2H6O       // Ethanol
- * 23 = C8H8
- * 24 = R407f
- * 25 = C4H10       // Butan/ R600
- * 26 = CL2         // Chlor
- * Rest = O2
- */
+/** Sensortypen */
 void STyp(Kanal,b)
 {
     char STypout[5];
@@ -217,6 +188,7 @@ void STyp(Kanal,b)
     else if(b==24){STypout[0]='R';STypout[1]='4';STypout[2]='0';STypout[3]='7';STypout[4]='f';}     // 024: R407f
     else if(b==25){STypout[0]='C';STypout[1]='4';STypout[2]='H';STypout[3]='1';STypout[4]='0';}     // 025: C4H10 Butan R600
     else if(b==26){STypout[0]='C';STypout[1]='L';STypout[2]='2';}                                   // 026: CL2 (Chlor)
+    else if(b==27){STypout[0]='R';STypout[1]='6';STypout[2]='0';STypout[3]='1';}                    // 027: R601 (Pentan)
     else {STypout[0]='O';STypout[1]='2';}                                                           // Rest: O2 (Sauerstoff))
 
     memcpy(Typ[Kanal],STypout,5);
