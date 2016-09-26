@@ -199,7 +199,7 @@ void SI(int c, int c1)
 {
     if(c==0)memcpy(&Zeile2[c1],"UEG",3);
     else if(c==1)memcpy(&Zeile2[c1],"VOL",3);
-    else memcpy(&Zeile2[c1],"ppm",3);
+    else memcpy(&Zeile2[c1],"ppb",3);
 }
 
 void RelAnf ( int d )

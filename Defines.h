@@ -263,11 +263,11 @@ BORV27   Brownout-Reset bei 2,7V
     hilo(364),  // Wartungsinterval Tag LOWByte
 
    // Sensor1
-    0,          // Typ Sensor1 (siehe Datei LCD.h)
-    0,          // Einheit Sensor1 (0=UEG, 1=VOL, 2=ppm)
-    hilo(1000), // Oberer Grenzwert (UEG x10)
+    26,          // Typ Sensor1 (siehe Datei LCD.h)
+    2,          // Einheit Sensor1 (0=UEG, 1=VOL, 2=ppm)
+    hilo(5000), // Oberer Grenzwert (UEG x10)
     hilo(0),    // Unterer Grenzwert
-    1,          // Auswertung Linear oder Kurve Sensor1 (0=linear; 1=Kurve)
+    0,          // Auswertung Linear oder Kurve Sensor1 (0=linear; 1=Kurve)
     1,          // Freigabe Sensor1
     hilo(0),    // Wertepaar 1 Konzentration LOWByte Sensor1
     hilo(1),    // Wertepaar 2 Konzentration LOWByte Sensor1
@@ -291,12 +291,12 @@ BORV27   Brownout-Reset bei 2,7V
     hilo(2000), // Wertepaar 10 Strom LOWByte Sensor1
             
     // Sensor2
-    0,          // Typ Sensor2 (siehe Datei LCD.h)
-    0,          // Einheit Sensor2 (0=UEG, 1=VOL, 2=ppm)
-    hilo(1000), // Oberer Grenzwert (UEG x10)
+    26,          // Typ Sensor2 (siehe Datei LCD.h)
+    2,          // Einheit Sensor2 (0=UEG, 1=VOL, 2=ppm)
+    hilo(5000), // Oberer Grenzwert (UEG x10)
     hilo(0),    // Unterer Grenzwert
-    1,          // Auswertung Linear oder Kurve Sensor2 (0=linear; 1=Kurve)
-    1,          // Freigabe Sensor2
+    0,          // Auswertung Linear oder Kurve Sensor2 (0=linear; 1=Kurve)
+    0,          // Freigabe Sensor2
     hilo(0),    // Wertepaar 1 Konzentration LOWByte Sensor2
     hilo(1),    // Wertepaar 2 Konzentration LOWByte Sensor2
     hilo(100),  // Wertepaar 3 Konzentration LOWByte Sensor2
@@ -320,31 +320,31 @@ BORV27   Brownout-Reset bei 2,7V
 
     // Alarm Einstellungen
     // Sensor1
-    hilo(200),  // Sensor1 Schwelle Alarmpunkt 1 LOWByte
-    hilo(50),   // Sensor1 Hysterese Alarmpunkt 1 LOWByte
+    hilo(2000),  // Sensor1 Schwelle Alarmpunkt 1 LOWByte
+    hilo(500),   // Sensor1 Hysterese Alarmpunkt 1 LOWByte
     0,          // Sensor1 Halten Alarmpunkt 1
     1,          // Sensor1 Anforderung Relais Alarmpunkt 1 (1=K01; 2=K02; 3=K03; 4=K04; 5=K01K02; 6=K02K03; 7=K03K04; 8=K01K03; 9=K02K04; 10=K01K04; 11=K01K02K03; 12=K01K02K04; 13=K01K03K04; 14=K02K03K04; 15=K01K02K03K04;)
-    hilo(300),  // Sensor1 Schwelle Alarmpunkt 2 LOWByte
-    hilo(50),   // Sensor1 Hysterese Alarmpunkt 2 LOWByte
+    hilo(3000),  // Sensor1 Schwelle Alarmpunkt 2 LOWByte
+    hilo(500),   // Sensor1 Hysterese Alarmpunkt 2 LOWByte
     0,          // Sensor1 Halten Alarmpunkt 2
     5,          // Sensor1 Anforderung Relais Alarmpunkt 2 (1=K01; 2=K02; 3=K03; 4=K04; 5=K01K02; 6=K02K03; 7=K03K04; 8=K01K03; 9=K02K04; 10=K01K04; 11=K01K02K03; 12=K01K02K04; 13=K01K03K04; 14=K02K03K04; 15=K01K02K03K04;)
-    hilo(400),  // Sensor1 Schwelle Alarmpunkt 3 LOWByte
-    hilo(50),   // Sensor1 Hysterese Alarmpunkt 3 LOWByte
+    hilo(4000),  // Sensor1 Schwelle Alarmpunkt 3 LOWByte
+    hilo(500),   // Sensor1 Hysterese Alarmpunkt 3 LOWByte
     0,          // Sensor1 Halten Alarmpunkt 3
     11,         // Sensor1 Anforderung Relais Alarmpunkt 3 (1=K01; 2=K02; 3=K03; 4=K04; 5=K01K02; 6=K02K03; 7=K03K04; 8=K01K03; 9=K02K04; 10=K01K04; 11=K01K02K03; 12=K01K02K04; 13=K01K03K04; 14=K02K03K04; 15=K01K02K03K04;)
 
     // Alarm Einstellungen
     // Sensor2
-    hilo(200),  // Sensor2 Schwelle Alarmpunkt 1 LOWByte
-    hilo(50),   // Sensor2 Hysterese Alarmpunkt 1 LOWByte
+    hilo(2000),  // Sensor2 Schwelle Alarmpunkt 1 LOWByte
+    hilo(500),   // Sensor2 Hysterese Alarmpunkt 1 LOWByte
     0,          // Sensor2 Halten Alarmpunkt 1
     1,          // Sensor2 Anforderung Relais Alarmpunkt 1 (1=K01; 2=K02; 3=K03; 4=K04; 5=K01K02; 6=K02K03; 7=K03K04; 8=K01K03; 9=K02K04; 10=K01K04; 11=K01K02K03; 12=K01K02K04; 13=K01K03K04; 14=K02K03K04; 15=K01K02K03K04;)
-    hilo(300),  // Sensor2 Schwelle Alarmpunkt 2 LOWByte
-    hilo(50),   // Sensor2 Hysterese Alarmpunkt 2 LOWByte
+    hilo(3000),  // Sensor2 Schwelle Alarmpunkt 2 LOWByte
+    hilo(500),   // Sensor2 Hysterese Alarmpunkt 2 LOWByte
     0,          // Sensor2 Halten Alarmpunkt 2
     5,          // Sensor2 Anforderung Relais Alarmpunkt 2 (1=K01; 2=K02; 3=K03; 4=K04; 5=K01K02; 6=K02K03; 7=K03K04; 8=K01K03; 9=K02K04; 10=K01K04; 11=K01K02K03; 12=K01K02K04; 13=K01K03K04; 14=K02K03K04; 15=K01K02K03K04;)
-    hilo(400),  // Sensor2 Schwelle Alarmpunkt 3 LOWByte
-    hilo(50),   // Sensor2 Hysterese Alarmpunkt 3 LOWByte
+    hilo(4000),  // Sensor2 Schwelle Alarmpunkt 3 LOWByte
+    hilo(500),   // Sensor2 Hysterese Alarmpunkt 3 LOWByte
     0,          // Sensor2 Halten Alarmpunkt 3
     11,         // Sensor2 Anforderung Relais Alarmpunkt 3 (1=K01; 2=K02; 3=K03; 4=K04; 5=K01K02; 6=K02K03; 7=K03K04; 8=K01K03; 9=K02K04; 10=K01K04; 11=K01K02K03; 12=K01K02K04; 13=K01K03K04; 14=K02K03K04; 15=K01K02K03K04;)
 
