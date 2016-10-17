@@ -189,6 +189,7 @@ void STyp(Kanal,b)
     else if(b==25){STypout[0]='C';STypout[1]='4';STypout[2]='H';STypout[3]='1';STypout[4]='0';}     // 025: C4H10 Butan R600
     else if(b==26){STypout[0]='C';STypout[1]='L';STypout[2]='2';}                                   // 026: CL2 (Chlor)
     else if(b==27){STypout[0]='R';STypout[1]='6';STypout[2]='0';STypout[3]='1';}                    // 027: R601 (Pentan)
+    else if(b==28){STypout[0]='H';STypout[1]='2';}                                                 // 028: H2 (Wasserstoff)
     else {STypout[0]='O';STypout[1]='2';}                                                           // Rest: O2 (Sauerstoff))
 
     memcpy(Typ[Kanal],STypout,5);
