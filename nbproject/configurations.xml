@@ -43,7 +43,7 @@
         <targetPluginBoard></targetPluginBoard>
         <platformTool>PICkit3PlatformTool</platformTool>
         <languageToolchain>CCSC</languageToolchain>
-        <languageToolchainVersion></languageToolchainVersion>
+        <languageToolchainVersion>5.042</languageToolchainVersion>
         <platform>3</platform>
       </toolsSet>
       <compileType>
