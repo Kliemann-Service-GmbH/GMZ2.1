@@ -176,7 +176,7 @@ void STyp(Kanal,b)
     else if(b==12){STypout[0]='R';STypout[1]='4';STypout[2]='0';STypout[3]='4';STypout[4]='a';}     // 012: R404a
     else if(b==13){STypout[0]='R';STypout[1]='4';STypout[2]='0';STypout[3]='7';STypout[4]='c';}     // 013: R407c
     else if(b==14){STypout[0]='C';STypout[1]='4';STypout[2]='H';STypout[3]='8';STypout[4]='O';}     // 014: C4H8O
-    else if(b==15){STypout[0]='C';STypout[1]='9';STypout[2]='H';STypout[3]='2';STypout[4]='0';}     // 015: C9H20 (Nonan))
+    else if(b==15){STypout[0]='C';STypout[1]='9';STypout[2]='H';STypout[3]='2';STypout[4]='0';}     // 015: C9H20 (Nonan)
     else if(b==16){STypout[0]='C';STypout[1]='3';STypout[2]='H';STypout[3]='8';}                    // 016: Propan R290
     else if(b==17){STypout[0]='C';STypout[1]='4';STypout[2]='H';STypout[3]='1';STypout[4]='0';}     // 017: C4H10
     else if(b==18){STypout[0]='C';STypout[1]='6';STypout[2]='H';STypout[3]='2';}                    // 018: C6H2
@@ -188,9 +188,10 @@ void STyp(Kanal,b)
     else if(b==24){STypout[0]='R';STypout[1]='4';STypout[2]='0';STypout[3]='7';STypout[4]='f';}     // 024: R407f
     else if(b==25){STypout[0]='C';STypout[1]='4';STypout[2]='H';STypout[3]='1';STypout[4]='0';}     // 025: C4H10 Butan R600
     else if(b==26){STypout[0]='C';STypout[1]='L';STypout[2]='2';}                                   // 026: CL2 (Chlor)
-    else if(b==27){STypout[0]='R';STypout[1]='6';STypout[2]='0';STypout[3]='1';}                    // 027: R601 (Pentan)
-    else if(b==28){STypout[0]='H';STypout[1]='2';}                                                 // 028: H2 (Wasserstoff)
-    else {STypout[0]='O';STypout[1]='2';}                                                           // Rest: O2 (Sauerstoff))
+    else if(b==27){STypout[0]='R';STypout[1]='6';STypout[2]='0';STypout[3]='1';}                    // 027: R601 (n-Pentan)
+    else if(b==28){STypout[0]='H';STypout[1]='2';}                                                  // 028: H2 (Wasserstoff)
+    else if(b==29){STypout[0]='C';STypout[1]='5';STypout[2]='H';STypout[3]='1';STypout[4]='2';}     // 029: C5H12 (Pentane) ist das selbe wie R601 (Pentane halt)
+    else {STypout[0]='O';STypout[1]='2';}                                                           // Rest: O2 (Sauerstoff)
 
     memcpy(Typ[Kanal],STypout,5);
 }
