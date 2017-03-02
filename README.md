@@ -6,13 +6,19 @@ Dieser, scheinbar leere, Branch enthält nur die Dateien die im Vergleich zum Ma
 
 Um aus diesen Daten eine lauffähige Version zu generieren sollten folgende Schritte ausgeführt werden.
 
-```
+```bash
 # sicherstellen das vom master Branch aus opperiert wird
 git checkout master
-# eine neuen, temporären, branch erstellen
-git branch -d merge
-# die Defines aus dem Branch importieren von dessen eine Version erstellt werden soll
+
+# eine neuen, temporären, branch aus dem master erstellen
+git checkout -b merge master
+
+# die Defines aus dem Branch importieren der als Vorlage dienen soll
 git checkout Defines.h C5H12-0-100UEG-linear
+
+# nachdem das Hex File gebuildet und dokumentiert wurde kann der temp. branch
+# wieder gelöscht werden
+git branch -d merge
 ```
 
 Nun kann kompelliert werden.
