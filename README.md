@@ -14,7 +14,7 @@ git checkout master
 git checkout -b merge master
 
 # die Defines aus dem Branch importieren der als Vorlage dienen soll
-git checkout Defines.h C5H12-0-100UEG-linear
+git checkout C5H12-0-100UEG-linear Defines.h
 
 # nachdem das Hex File gebuildet und dokumentiert wurde kann der temp. branch
 # wieder gelöscht werden
