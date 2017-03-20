@@ -8,6 +8,8 @@ Die verschiedenen Gas Arten sind in git Branches realisiert.
 
 ## Projekt mit unterschiedlichem Gas erstellen
 
+**Als Beispiel dient der Branch C5H12-0-100UEG-linear, diesen bitte durch den gewünschten ersetzen.**
+
 ```bash
 # sicherstellen das vom master Branch aus opperiert wird
 git checkout master
@@ -16,7 +18,7 @@ git checkout master
 git checkout -b merge master
 
 # die Defines aus dem Branch importieren der als Vorlage dienen soll
-git checkout Defines.h C5H12-0-100UEG-linear
+git checkout C5H12-0-100UEG-linear Defines.h
 
 # nachdem das Hex File gebuildet und dokumentiert wurde kann der temp. branch
 # wieder gelöscht werden
@@ -42,6 +44,6 @@ git reset -- Defines.h
 git checkout Defines.h
 git checkout template README.md
 git checkout template .gitignore
-git commit -a
+git commit -a -m "Update des Branches auf das neue 'merge' Format"
 git push
 ```
