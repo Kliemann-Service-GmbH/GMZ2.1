@@ -191,7 +191,7 @@ void STyp(Kanal,b)
     else if(b==27){STypout[0]='R';STypout[1]='6';STypout[2]='0';STypout[3]='1';}                    // 027: R601 (n-Pentan)
     else if(b==28){STypout[0]='H';STypout[1]='2';}                                                  // 028: H2 (Wasserstoff)
     else if(b==29){STypout[0]='C';STypout[1]='5';STypout[2]='H';STypout[3]='1';STypout[4]='2';}     // 029: C5H12 (Pentane) ist das selbe wie R601 (Pentane)
-    else if(b==29){STypout[0]='C';STypout[1]='6';STypout[2]='H';STypout[3]='1';STypout[4]='4';}     // 030: C6H16 (Hexan)
+    else if(b==30){STypout[0]='C';STypout[1]='6';STypout[2]='H';STypout[3]='1';STypout[4]='4';}     // 030: C6H16 (Hexan)
     else {STypout[0]='O';STypout[1]='2';}                                                           // Rest: O2 (Sauerstoff)
 
     memcpy(Typ[Kanal],STypout,5);
