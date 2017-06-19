@@ -20,6 +20,7 @@ git checkout C5H12-0-100UEG-linear Defines.h
 
 # nachdem das Hex File gebuildet und dokumentiert wurde kann der temp. branch
 # wieder gelöscht werden
+git checkout master
 git branch -d merge
 
 # Anschließend wird der Head wieder zurückgesetzt
