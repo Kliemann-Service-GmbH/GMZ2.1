@@ -263,7 +263,7 @@ BORV27   Brownout-Reset bei 2,7V
     hilo(364),  // Wartungsinterval Tag LOWByte
 
    // Sensor1
-    0,          // Typ Sensor1 (siehe Datei LCD.h)
+    22,          // Typ Sensor1 (siehe Datei LCD.h)
     0,          // Einheit Sensor1 (0=UEG, 1=VOL, 2=ppm)
     hilo(1000), // Oberer Grenzwert (UEG x10)
     hilo(0),    // Unterer Grenzwert
@@ -291,7 +291,7 @@ BORV27   Brownout-Reset bei 2,7V
     hilo(2000), // Wertepaar 10 Strom LOWByte Sensor1
             
     // Sensor2
-    0,          // Typ Sensor2 (siehe Datei LCD.h)
+    22,          // Typ Sensor2 (siehe Datei LCD.h)
     0,          // Einheit Sensor2 (0=UEG, 1=VOL, 2=ppm)
     hilo(1000), // Oberer Grenzwert (UEG x10)
     hilo(0),    // Unterer Grenzwert
