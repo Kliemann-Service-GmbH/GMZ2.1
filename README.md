@@ -2,19 +2,23 @@
 
 ## Gas Mess Zentrale für bis zu 2 analoge Sensoren in 4-20mA Technologie
 
-Dies ist der `master` Branch des Projektes. Alle Dateien bilden ein buildbares Projekt.
+Dies ist der `master` Branch des Projektes. Alle Dateien zusammen bilden
+das Projekt.
 
-Die verschiedenen Gas Arten sind in `git` Branches realisiert.
+Die verschiedenen Gas Arten sind in so genannten `git` Branches geordnet. 
+In diesen Branches sind nur die Dateien enthalten die im Vergleich 
+zum `master` Branch unterschielich sind
 
 ## Projekt mit unterschiedlichem Gas erstellen
 
-**Als Beispiel dient der Branch C5H12-0-100UEG-linear, diesen bitte durch den gewünschten ersetzen.**
+**Als Beispiel dient der Branch C5H12-0-100UEG-linear, 
+diesen bitte durch den gewünschten ersetzen.**
 
 ```bash
 # sicherstellen das vom `master` Branch aus opperiert wird
 git checkout master
 
-# eine neuen, temporären, branch aus dem `master` erstellen
+# eine neuen, temporären, branch aus dem `master` Branch erstellen
 git checkout -b merge master
 
 # die Defines aus dem Branch importieren der als Vorlage dienen soll
