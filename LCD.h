@@ -177,7 +177,7 @@ void STyp(Kanal,b)
     else if(b==13){STypout[0]='R';STypout[1]='4';STypout[2]='0';STypout[3]='7';STypout[4]='c';}     // 013: R407c
     else if(b==14){STypout[0]='C';STypout[1]='4';STypout[2]='H';STypout[3]='8';STypout[4]='O';}     // 014: C4H8O
     else if(b==15){STypout[0]='C';STypout[1]='9';STypout[2]='H';STypout[3]='2';STypout[4]='0';}     // 015: C9H20 (Nonan)
-    else if(b==16){STypout[0]='C';STypout[1]='3';STypout[2]='H';STypout[3]='8';}                    // 016: Propan R290
+    else if(b==16){STypout[0]='C';STypout[1]='3';STypout[2]='H';STypout[3]='8';}                    // 016: C3H8 (Propan R290)
     else if(b==17){STypout[0]='C';STypout[1]='4';STypout[2]='H';STypout[3]='1';STypout[4]='0';}     // 017: C4H10
     else if(b==18){STypout[0]='C';STypout[1]='6';STypout[2]='H';STypout[3]='2';}                    // 018: C6H2
     else if(b==19){STypout[0]='R';STypout[1]='4';STypout[2]='1';STypout[3]='0';}                    // 019: R410
