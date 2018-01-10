@@ -2,27 +2,33 @@
 
 ## Gas Mess Zentrale für bis zu 2 analoge Sensoren in 4-20mA Technologie
 
-Dieser, scheinbar leere, Branch enthält nur die Dateien die im Vergleich zum Master Branch des Repos anders sind.
+Dies ist der `master` Branch des Projektes. Alle Dateien zusammen bilden
+das Projekt.
 
-Um aus diesen Daten eine lauffähige Version zu generieren sollten folgende Schritte ausgeführt werden.
+Die verschiedenen Gas Arten sind in so genannten `git` Branches geordnet.
+In diesen Branches sind nur die Dateien enthalten die im Vergleich
+zum `master` Branch unterschielich sind
 
-**Als Beispiel dient der Branch C5H12-0-100UEG-linear, diesen bitte durch den gewünschten ersetzen.**
+## Projekt mit unterschiedlichem Gas erstellen
+
+**Als Beispiel dient der Branch C5H12-0-100UEG-linear,
+diesen bitte durch den gewünschten ersetzen.**
 
 ```bash
 # sicherstellen das vom `master` Branch aus opperiert wird
 git checkout master
 
-# eine neuen, temporären, branch aus dem `master` erstellen
+# eine neuen, temporären, branch aus dem `master` Branch erstellen
 git checkout -b merge master
 
 # die Defines aus dem Branch importieren der als Vorlage dienen soll
 git checkout C5H12-0-100UEG-linear Defines.h
 ```
 
-Nun kann kompiliert werden. 
+Nun kann kompiliert werden.
 Anschließend wird das Hex File in die Versionskontrolle aufgenommen.
 
-Nachdem das Hex File gebuildet und dokumentiert wurde kann der 
+Nachdem das Hex File gebuildet und dokumentiert wurde kann der
 temporäre `merge` branch wieder gelöscht werden.
 
 ```bash
